@@ -12,6 +12,9 @@ img_file_buffer = st.camera_input("Toma una Foto")
 with st.sidebar:
       filtro = st.radio("Aplicar Filtro",('Con Filtro', 'Sin Filtro'))
 
+image = Image.open('rosemary.png')
+
+st.image(image,width=300)
 
 if img_file_buffer is not None:
     # To read image file buffer with OpenCV:
